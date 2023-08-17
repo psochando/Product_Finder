@@ -5,7 +5,7 @@ from output import filter_df, update_df
 
 st.title("Introducir nuevo artículo:")
 
-st.subheader("Los campos marcados (*) son obligatorios para un correcto funcionamiento.)
+st.subheader("Los campos marcados (*) son obligatorios para un correcto funcionamiento.")
 
 v1 = st.number_input('EAN:', 9999999999999)
 v2 = st.text_input('Referencia:', 9999999)
