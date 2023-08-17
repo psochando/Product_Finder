@@ -3,13 +3,15 @@ import pandas as pd
 from output import filter_df, update_df
 
 
-st.title("Introducir nuevo articulo:")
+st.title("Introducir nuevo artículo:")
+
+st.subheader("Los campos marcados (*) son obligatorios para un correcto funcionamiento. \nPuede inspirarse en artículos del dataset 'df_art'.")
 
 v1 = st.number_input('EAN:', 9999999999999)
 v2 = st.text_input('Referencia:', 9999999)
-v3 = st.text_input('Nombre:')
-v4 = st.number_input('Coste:', 0.0)
-v5 = st.number_input('Precio:', 0.0)
+v3 = st.text_input('* Nombre:')
+v4 = st.number_input('* Coste:', 0.0)
+v5 = st.number_input('* Precio:', 0.0)
 v6 = st.number_input('tipo_IVA:', 0)
 v7 = st.number_input('P.V.P.:', 0.0)
 v8 = st.number_input('Beneficio:', 0.0)
@@ -17,7 +19,7 @@ v9 = st.number_input('%MC:', 0.0)
 v10 = st.number_input('%MV:', 0.0)
 v11 = st.number_input('Stock:', 0)
 v12 = st.number_input('Días desde la ultima venta:', 0)
-v13 = st.text_input('Proveedor:')
+v13 = st.text_input('* Proveedor:')
 v14 = st.text_input('Clasificación:', 'LIMPIEZA')
 
 dic = {'EAN': v1,
