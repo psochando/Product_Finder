@@ -24,7 +24,7 @@ v14 = st.text_input('Clasificación:', 'LIMPIEZA')
 
 dic = {'EAN': v1,
         'Referencia': v2,
-        'Nombre': v3,
+        'Nombre': v3.upper(),
         'Coste': v4,
         'Precio': v5,
         'tipo_IVA': v6,
@@ -34,7 +34,7 @@ dic = {'EAN': v1,
         '%MV': v10,
         'Stock': v11,
         'Dias_ult_venta': v12,
-        'Proveedor': v13,
+        'Proveedor': v13.upper(),
         'Clasificación': v14}
 
 if 'df_art' not in st.session_state:
